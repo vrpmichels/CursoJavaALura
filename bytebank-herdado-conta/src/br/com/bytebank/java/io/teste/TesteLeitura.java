@@ -1,4 +1,4 @@
-package br.com.java.io.teste;
+package br.com.bytebank.java.io.teste;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -15,7 +15,7 @@ public class TesteLeitura {
 
         //FLuxo de Entrada com Arquivo
         
-        InputStream fis = new FileInputStream("lorem.txt"); //Entrada de um arquivo binario
+        InputStream fis = new FileInputStream("lorem2.txt"); //Entrada de um arquivo binario
         Reader isr = new InputStreamReader(fis);  //tranformando bit e bytes em caracteres 
         BufferedReader br = new BufferedReader(isr);
 
