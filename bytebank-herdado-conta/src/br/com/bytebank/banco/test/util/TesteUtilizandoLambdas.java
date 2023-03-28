@@ -2,9 +2,8 @@ package br.com.bytebank.banco.test.util;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Comparator;
-import java.util.Collections;
+
 
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
@@ -61,6 +60,8 @@ public class TesteUtilizandoLambdas {
 
         lista.forEach( (conta) -> System.out.println(conta + ", " + conta.getTitular().getNome())); //esse codigo é o mesmo apresentado abaixo, mas utilizando lambda
 
+
+        System.out.println(comp);
        // for (Conta conta : lista) {
        //     System.out.println(conta + ", " + conta.getTitular().getNome());
        // }

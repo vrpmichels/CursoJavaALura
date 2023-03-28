@@ -4,7 +4,7 @@ import java.util.List;
 
 public class TesteInteger {
     public static void main(String[] args) {
-    int idade = 29;
+    //int idade = 29;
     Integer idadeRef = Integer.valueOf(29); //autoboxing
     System.out.println(idadeRef.doubleValue());
 
@@ -14,7 +14,7 @@ public class TesteInteger {
     System.out.println(Integer.SIZE);
     System.out.println(Integer.BYTES);
 
-    int valor = idadeRef.intValue(); //unboxing
+    //int valor = idadeRef.intValue(); //unboxing
     String s = args[0];//"10"
     //Integer numero = Integer.valueOf(s);
     int numero = Integer.parseInt(s);

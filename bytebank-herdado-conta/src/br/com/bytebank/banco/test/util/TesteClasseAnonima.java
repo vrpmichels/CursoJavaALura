@@ -1,9 +1,9 @@
 package br.com.bytebank.banco.test.util;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Collection;
+//import java.util.Collection;
 import java.util.Comparator;
-import java.util.Collections;
+//import java.util.Collections;
 
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
@@ -69,7 +69,8 @@ public class TesteClasseAnonima {
                                 return nomeC1.compareTo(nomeC2);
                             }
                     };
-    
+                    
+                    System.out.println(comp);
             for (Conta conta : lista) {
                     System.out.println(conta + ", " + conta.getTitular().getNome());
             }
