@@ -2,7 +2,7 @@ package br.com.bytebank.java.io.teste;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileInputStream;
+//import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,8 +23,8 @@ public class TesteEntradaTecladoSaidaArquivo {
         Reader isr = new InputStreamReader(fis);  //tranformando bit e bytes em caracteres 
         BufferedReader br = new BufferedReader(isr);
 
-        //OutputStream fos = new FileOutputStream("lorem2.txt"); //System.out (imprimir teclado)
-        OutputStream fos = System.out;
+        OutputStream fos = new FileOutputStream("lorem2.txt"); //System.out (imprimir teclado)
+        //OutputStream fos = System.out;
         Writer osw = new OutputStreamWriter(fos);
         BufferedWriter bw = new BufferedWriter(osw);
 
@@ -34,6 +34,7 @@ public class TesteEntradaTecladoSaidaArquivo {
            
             bw.write(linha);
             bw.newLine();
+            bw.flush(); //flush comando pra ir gravando e imprimindo
             linha = br.readLine();
 
         }
