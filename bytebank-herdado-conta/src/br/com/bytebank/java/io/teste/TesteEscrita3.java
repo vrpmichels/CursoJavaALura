@@ -24,8 +24,9 @@ public class TesteEscrita3 {
       ps.println("Vini123");
       ps.println();
       ps.println("teeeeeSTE");
-    
+      ps.close();
    }
+   
 }
     
 

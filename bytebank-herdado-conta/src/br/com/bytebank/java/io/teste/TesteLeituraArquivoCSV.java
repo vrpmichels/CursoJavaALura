@@ -1,7 +1,7 @@
 package br.com.bytebank.java.io.teste;
 
 import java.io.File;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -20,12 +20,12 @@ public class TesteLeituraArquivoCSV {
             linhaScanner.useDelimiter(",");
 
             String valor1 = linhaScanner.next();
-            int valor2 = linhaScanner.nextInt();
-            int valor3 = linhaScanner.nextInt();
+            int agencia = linhaScanner.nextInt();
+            int conta = linhaScanner.nextInt();
             String valor4 = linhaScanner.next();
             double valor5 = linhaScanner.nextDouble();
 
-            String valorFormatado = String.format("%s - %d, %d %s : %f", valor1 + valor2 + valor3 + valor4 + valor5);  //formatação de valores melhora a legebilidade 
+            String valorFormatado = String.format("%s - %04d, %d %s : %05.2f", valor1 + agencia + conta + valor4 + valor5);  //formatação de valores melhora a legebilidade 
             System.out.println(valorFormatado);
 
             linhaScanner.close();
